@@ -6,9 +6,9 @@ module.exports = (args) => {
     : args[1] === 'component'
     || args[1] === 'com'
     ? 'component'
-    : args[1] === 'controller'
+    : args[1] === 'container'
     || args[1] === 'con'
-    ? 'controller'
+    ? 'container'
     : args[1]
     : 'help';
 
@@ -21,8 +21,8 @@ module.exports = (args) => {
       require('./generate/component')(args);
       break
     }
-    case 'controller': {
-      require('./generate/controller')(args);
+    case 'container': {
+      require('./generate/container')(args);
       break
     }
     default:
