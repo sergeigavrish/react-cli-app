@@ -1,0 +1,13 @@
+{
+  "name": "react-cli-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "bin": {
+    "react": "bin/cli"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
