@@ -5,5 +5,5 @@ module.exports = (args) => {
     || args[0] === 'g' 
     ? 'generate' 
     : args[0];
-  console.log(menu[command] || menu.main)
+  console.log(menu[command] || menu.main);
 }

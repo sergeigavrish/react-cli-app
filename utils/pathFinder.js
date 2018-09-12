@@ -19,7 +19,7 @@ module.exports = () => {
     with 'package.json' or up to 3 folders deep from the root folder`);
 
       require('../cmds/help')([]);
+      process.exit();
     }
-
     return currentPath;
 }
