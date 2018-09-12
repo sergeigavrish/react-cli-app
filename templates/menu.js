@@ -8,8 +8,8 @@ const menu = {
   generate: `
     react generate [g] <options>
 
-    component  [com] .......... create react component
-    container [con] .......... create react container
+    component  [comp] .......... create react component
+    container [cont] .......... create react container
 
     print name in plain camelCase or use - or _
   `,

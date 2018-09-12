@@ -1,55 +1,55 @@
-const container = {
+const component = {
 
   "jsx": (name) => 
-  `import React, { Component } from 'react';
-  import PropTypes from 'prop-types'
-  
-  export default ${name}Container extends Component {
-    
-    this.state = {
+`import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 
-    }
-
-    componentDidMount() {
-      
-    }
-    
-    render {
-      return ()
-    }
+export default ${name}Container extends Component {
   
+  state = {
+
+  }
+
+  componentDidMount() {
+    
   }
   
-  ${name}Container.propTypes = {
-    
+  render {
+    return ()
   }
-  `,
+
+}
+
+${name}Container.propTypes = {
+  
+}
+`,
   "css": () => 
-  `
-  `,
+`
+`,
   "spec": (name) => 
-  `import React from 'react';
-  import ${name} from './${name}';
-  
-  describe('${name}', () => {
-  
-      let container;
-  
-      beforeEach(() => {
-          container = shallow(<${name}/>);
-      });
-  
-      it('render component', () => {
-          expect(container.length).toEqual(1);
-      });
-      
-  });
-  `,
+`import React from 'react';
+import ${name} from './${name}';
+
+describe('${name}', () => {
+
+    let container;
+
+    beforeEach(() => {
+        container = shallow(<${name}/>);
+    });
+
+    it('render component', () => {
+        expect(container.length).toEqual(1);
+    });
+    
+});
+`,
   "index": (name) => 
-  `import ${name} from './';
-  export default;`
+`export default from './${name}.jsx';
+`
 }
 
 module.exports = {
-  container
+  component
 }

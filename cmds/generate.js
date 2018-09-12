@@ -4,10 +4,10 @@ module.exports = (args) => {
     ? args[1] === 'h'
     ? 'help'
     : args[1] === 'component'
-    || args[1] === 'com'
+    || args[1] === 'comp'
     ? 'component'
     : args[1] === 'container'
-    || args[1] === 'con'
+    || args[1] === 'cont'
     ? 'container'
     : args[1]
     : 'help';

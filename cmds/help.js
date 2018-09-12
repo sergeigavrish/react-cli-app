@@ -1,4 +1,4 @@
-const menu = require('../templates/menu');
+const { menu } = require('../templates/menu');
 
 module.exports = (args) => {
   const command = args[0] === 'generate'
@@ -6,5 +6,4 @@ module.exports = (args) => {
     ? 'generate' 
     : args[0];
   console.log(menu[command] || menu.main)
-
 }

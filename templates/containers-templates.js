@@ -1,32 +1,32 @@
 const container = {
 
   "jsx": (name) => 
-  `import React, { PureComponent } from 'react';
-  import PropTypes from 'prop-types'
-  
-  export default ${name}Container extends PureComponent {
-    
-    this.state = {
+`import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types'
 
-    }
-
-    componentDidMount() {
-      
-    }
-    
-    render {
-      return ()
-    }
+export default ${name}Container extends PureComponent {
   
+  state = {
+
+  }
+
+  componentDidMount() {
+    
   }
   
-  ${name}Container.propTypes = {
-    
+  render {
+    return ()
   }
-  `,
+
+}
+
+${name}Container.propTypes = {
+  
+}
+`,
   "index": (name) => 
-  `import ${name} from './';
-  export default;`
+`export default from './${name}.jsx';
+`
 }
 
 module.exports = {
